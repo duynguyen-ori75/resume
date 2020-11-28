@@ -1,6 +1,3 @@
-resume.aux
-resume.log
-resume.out
-academic_resume.aux
-academic_resume.log
-academic_resume.out
+*.aux
+*.log
+*.out

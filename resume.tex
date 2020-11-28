@@ -58,6 +58,15 @@
     \end{tabular*}\vspace{-5pt}
 }
 
+\newcommand{\resumeSubheadThree}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\normalsize#3} \\
+      \normalsize#4
+    \end{tabular*}\vspace{-5pt}
+}
+
 \newcommand{\link}[2]{{\color{blue}\href{#1}{#2}}}
 
 % \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
@@ -78,59 +87,18 @@
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{\huge Duy Nguyen} \\
-  & Email: \href{mailto:duynguyen.ori75@gmail.com}{duynguyen.ori75@gmail.com}\\
   & Mobile: +84 985 310995 \\
-  & Linkedin: \href{https://www.linkedin.com/in/duynguyen269/}{Duy Nguyen}
+  & Email: \href{mailto:duynguyen.ori75@gmail.com}{duynguyen.ori75@gmail.com}\\
+  & Linkedin: \href{https://www.linkedin.com/in/duynguyen269/}{Duy Nguyen} \\
+  & GitHub: \href{https://github.com/duynguyen-ori75}{Duy Nguyen}
 \end{tabular*}
 
 %-----------SUMMARY-----------------
 \section{Summary}
   \resumeItemListStart
-    \resumeItem{Software engineer with good knowledge about algorithms and data structures}
-    \resumeItem{Good understanding of database systems, distributed systems, network programming}
-    \resumeItem{Determine to be a world-class software engineer}
+    \resumeItem{Good knowledge about algorithms and data structures}
+    \resumeItem{Research interests: Database systems, Distributed computing, Data structures}
   \resumeItemListEnd
-
-%-----------EXPERIENCE-----------------
-\section{Experience}
-  \resumeSubHeadingListStart
-    \resumeSubhead
-      {Worldquant LLC}{Aug 2018 – Feb 2020}
-      {Software Engineer}
-      \resumeItemListStart
-        \resumeItem{Implemented a web-based interface to provide a better way to create an ETL configuration of datasets for the Business Analyst team. This helps the BAs to build the configuration for only 4 weeks instead of per dataset instead of months doing analyst and testing the configuration}
-        \resumeItem{Maintained custom fork of Spark data sources for internal usage}
-        \resumeItem{Implemented a custom Spark datasource which converts raw data to an internal data format. It reduces lots of manual work of my team}
-        \resumeItem{Frameworks/Tools: \textbf{Facebook Thrift}, \textbf{Spark}, \textbf{ReactJS}, \textbf{Mobx}, \textbf{Protobuf}}
-        \resumeItem{Languages: \textbf{Python}, \textbf{Scala}, \textbf{Javascript}, \textbf{C++}}
-      \resumeItemListEnd
-
-    \resumeSubhead
-      {Worldquant LLC}{Jul 2017 – Jul 2018}
-      {Web Developer}
-      \resumeItemListStart
-        \resumeItem{Maintained and improved internal applications, which help Researchers and Portfolio Managers manage their tasks, strategies, and alphas easily}
-        \resumeItem{One of the internal webs can serve a few hundred heavy-computing requests per second}
-        \resumeItem{Wrote an ORM-like layer which converts JSON parameters to SQL query}
-        \resumeItem{Implemented an in-house survey system based on LimeSurvey}
-        \resumeItem{Frameworks/Tools: \textbf{Apache HTTP Server}, \textbf{MySQL}, \textbf{ReactJS}}
-        \resumeItem{Languages: \textbf{Perl}, \textbf{Javascript}}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
-
-
-%-----------AWARDS----------
-\section{Achievements \& Awards}
-  \resumeSubHeadingListStart
-    \resumeSubheadTwo
-      {Ranked 9th in Vietnam National Olympiad in Informatics}{2012}
-      \resumeItemListStart
-        \resumeItem{Competed individually to solve 6 algorithmic problems using Pascal}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
-
 
 %-----------EDUCATION------------
 \section{Education}
@@ -140,20 +108,66 @@
       {Focused on Programming, Algorithm and Data structures}
     \resumeSubhead
       {University of Engineering and Technology, VNU Hanoi}{2013 -- 2017}
-      {Bachelor of Computer Science;  GPA: 3.36/4.0}
-    \resumeSubheadTwo
-      {Self-learning courses}{}
+      {Bachelor of Computer Science; GPA: 3.36/4.0}
+    \resumeSubheadThree
+      {Sungkyunkwan University}{2020 -- Present}
+      {Msc/PhD of Computer Science and Engineering}
+      {Coursework:}
       \resumeItemListStart
-        \resumeItem{CMU - Database systems -- https://15445.courses.cs.cmu.edu/}
-        \resumeItem{Princeton University - Distributed System -- https://www.cs.princeton.edu/courses/archive/fall16/cos418}
+        \resumeItem{Software engineering technologies}
+        \resumeItem{Computer network security}
       \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------AWARDS----------
+\section{Achievements \& Awards}
+  \resumeSubHeadingListStart
+    \resumeSubheadTwo
+      {Second prize in Vietnam National Olympiad in Informatics}{2012}
+      \resumeItemListStart
+        \resumeItem{Competed individually to solve 6 algorithmic problems using Pascal}
+        \resumeItem{Ranked 9th amongst thousands of contestants}
+      \resumeItemListEnd
+    \resumeSubheadTwo
+      {IELTS - International English Language Testing System}{2020}
+      \resumeItemListStart
+        \resumeItem{Overall: 7.0}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubhead
+      {Data Intensive Computing Laboratory}{2020 - Present}
+      {Graduate Research Assistant}
+      \resumeItemListStart
+        \resumeItem{Adviser: Professor Beomseok Nam}
+      \resumeItemListEnd
+    \resumeSubhead
+      {CIC Data}{2020}
+      {DevOps Engineer}
+    \resumeSubhead
+      {Worldquant LLC}{2017 - 2020}
+      {Software Engineer}
   \resumeSubHeadingListEnd
 
 %-----------SKILLS-----------------
 \section{Skills}
   \resumeItemListStart
-    \resumeItem{Languages: \textbf{Python}, \textbf{Perl}, \textbf{C++}, \textbf{Javascript}}
-    \resumeItem{Libraries and Tools: \textbf{MySQL}, \textbf{ReactJS}, \textbf{Mobx}, \textbf{Thrift}, \textbf{Protobuf}}
+    \resumeItem{Languages: \textbf{Python}, \textbf{C/C++}, \textbf{Javascript}}
+    \resumeItem{Libraries and Tools: \textbf{MySQL}, \textbf{SQLite}, \textbf{ReactJS}, \textbf{Thrift}, \textbf{Protobuf}}
   \resumeItemListEnd
+
+%-----------REFERENCES-----------------
+\section{References}
+  \resumeSubHeadingListStart
+    \resumeSubheadTwo
+      {Associate Professor Phan Xuan Hieu}{}
+      \resumeItemListStart
+        \resumeItem{Vice Dean of Faculty of Information and Technology, VNU-UET}
+        \resumeItem{Email: \href{mailto:hieupx@vnu.edu.vn}{hieupx@vnu.edu.vn}}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
 
 \end{document}
