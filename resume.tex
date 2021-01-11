@@ -10,6 +10,8 @@
 \usepackage{hyperref}
 \usepackage{fancyhdr}
 \usepackage{xcolor}
+\usepackage{tgtermes}
+\usepackage{graphicx}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -67,7 +69,9 @@
     \end{tabular*}\vspace{-5pt}
 }
 
-\newcommand{\link}[2]{{\color{blue}\href{#1}{#2}}}
+\newcommand{\link}[2]{{\href{#1}{\textrm{#2}}}}
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
 
 % \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
@@ -85,13 +89,12 @@
 \begin{document}
 
 %----------HEADING-----------------
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\huge Duy Nguyen} \\
-  & Mobile: +84 985 310995 \\
-  & Email: \href{mailto:duynguyen.ori75@gmail.com}{duynguyen.ori75@gmail.com} \\
-  & Linkedin: \href{https://www.linkedin.com/in/duynguyen269/}{Duy Nguyen} \\
-  & GitHub: \href{https://github.com/duynguyen-ori75}{Duy Nguyen}
-\end{tabular*}
+\begin{center}
+    \textbf{\huge Duy Nguyen} \\
+    \href{mailto:duynguyen.ori75@gmail.com}{duynguyen.ori75@gmail.com} \,
+    $\sbullet \;\link{https://www.linkedin.com/in/duynguyen269}{LinkedIn} $ \,
+    $\sbullet \;\link{https://github.com/duynguyen-ori75}{GitHub} $
+\end{center}
 
 %-----------SUMMARY-----------------
 \section{Summary}
